@@ -1,0 +1,57 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+下面css是覆盖一些elment-ui的样式,要覆盖element的样式在这里修改
+*/
+
+/* icon font path, required */
+/* 改变主题色变量 */
+// $--color-primary: #FFBD33;
+
+/* 改变 icon 字体路径变量，必需 */
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+// @import "~element-ui/packages/theme-chalk/src/index";
+/* 暂不引入上面样式，影响加载速度，待优化 */
+
+.el-scrollbar__wrap {
+    overflow-x: hidden !important;
+    margin-bottom: 0 !important;
+}
+
+.el-tabs__active-bar {
+    background-color: #3470FF;
+    height: 2px;
+}
+
+.el-tabs__item.is-active,
+.el-tabs__item:hover {
+    color: #3470FF;
+}
+
+.el-tabs__item {
+    color: $color-text-c2;
+}
+
+.pagination-box {
+    padding: 30px 0;
+    text-align: center;
+
+    .el-pagination.is-background .el-pager li {
+        color: $color-text-c2;
+        font-size: $font-size-22;
+        font-weight: normal;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+        background-color: $color-theme;
+        color: $color-text-c2;
+        font-size: $font-size-22;
+        font-weight: normal;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled):hover {
+        color: $color-text-c2;
+    }
+}
